@@ -1,10 +1,15 @@
 <?php 
 $name="Евгения";
+$age="26";
+$year="365";
+$age_days=$age * $year;
 $occupation="Analyst"; 
 $country="Russia";
 $city="Moscow";
 $email="email@mail.com";
-$phone="+711111111";?>
+$phone="+711111111";
+$track_record=["Front End Developer", "Web developer", "Graphic desigher"];
+?>
 
 <!DOCTYPE html>
 <html>
@@ -41,6 +46,7 @@ $phone="+711111111";?>
         </div>
         <div class="w3-container">
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $occupation; ?></p>
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo "{$age} {$age_days}"; ?></p>
           <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo "{$city} {$country}"; ?></p>
           <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $email; ?></p>
           <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><?php echo $phone; ?></p>
@@ -91,7 +97,7 @@ $phone="+711111111";?>
     <div class="w3-twothird">
     
       <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Опыт работы</h2>
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><?php echo $track_record; ?></h2>
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Front End Developer </b></h5>
           <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
